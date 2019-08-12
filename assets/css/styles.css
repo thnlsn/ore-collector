@@ -1,14 +1,11 @@
 body {
     font-family: 'Press Start 2P', cursive !important;
-}
-
-.title {
-    height: 5%;
-    width: 5%;
+    color: antiquewhite;
+    text-shadow: 2px 2px black;
+    background-image: url(../images/background.png);
 }
 
 h1 {
-    font-size: 50;
     padding: 2.5% 0;
 }
 
@@ -16,15 +13,100 @@ h2 {
     padding: 0 0 3% 0;
 }
 
+span {
+    color: whitesmoke;
+
+}
+
 .rules {
-    margin-top: 14%;
+    margin-top: 10%;
 }
 
 .ore {
     height: 200px;
     width: 200px;
+    opacity: 0.8;
+    margin: 14% 0 0% 0 !important;
+    cursor: url('../images/pickaxe.png'), auto;
 }
 
-.topOre {
-    margin: 14% 0 14% 0 !important;
+.ore:hover {
+    opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes hvr-pop {
+    5% {
+      -webkit-transform: scale(.5);
+      transform: scale(.5);
+    }
+  }
+  @keyframes hvr-pop {
+    5% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  .hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.1s;
+    animation-duration: 0.1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
