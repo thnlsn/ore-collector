@@ -14,9 +14,9 @@
 
 
 
-            <div class="row">
+            <div class="row titleRow">
                 <div class="col-lg text-center">
-                    <h1><img class="title" src="./assets/images/title.png" alt=""></h1>
+                    <h1><img class="img-fluid title" src="./assets/images/title.png" alt=""></h1>
                 </div>
             </div>
 
@@ -26,52 +26,63 @@
 
                     <div class="col-lg-5">
                         <h2 class="text-center">Rules</h2>
-                        <p class="rules">
-                            You will be given a random number at the start of the game.
-                        </p>
-                        <p>
-                            The four ores to the left are each given an unknown randomized value, and clicking them will add that much to your total.
-                        </p>
-
-                        <p>
-                            You win the game by matching the number listed above the ores. You lose the game if you go over that total.
-                        </p>
-
-                        <p>
-                            Every time the game starts, all values will be randomized.
-                        </p>
-
-                        <p>
-                            Good luck and have fun!
-                        </p>
+                        <div class="rules">
+                            <p>
+                                    You will be given a random number at the start of the game.
+                                </p>
+                                <p>
+                                    The four ores to the left are each given an unknown randomized value, and clicking them will add that much to your total.
+                                </p>
+        
+                                <p>
+                                    You win the game by matching the number listed above the ores. You lose the game if you go over that total.
+                                </p>
+        
+                                <p>
+                                    Every time the game starts, all values will be randomized.
+                                </p>
+        
+                                <p>
+                                    Good luck and have fun!
+                                </p>
+                        </div>
                     </div>
 
                     <div class="col-lg-7">
 
                         <div class="row">
                             <div class="col-lg-6">
-                            <h2 class="text-center">Goal: <span id="goal-amount">64</span></h2>    
+                            <h2 class="text-center">Goal:<span id="goal-amount">100</span></h2>    
                             </div>
                             <div class="col-lg-6">
-                            <h2 class="text-center">Total: <span id="current-amount">64</span></h2>    
+                            <h2 class="text-center">Total:<span id="total-amount">100</span></h2>    
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-6 text-lg-right text-sm-center">
+                            <div class="col-sm-6 text-lg-right text-sm-center">
                                 <img class="ore hvr-pop" src="./assets/images/diamond.png" alt="">
                             </div>
-                            <div class="col-lg-6 text-lg-left text-sm-center">
+                            <div class="col-sm-6 text-lg-left text-sm-center">
                                 <img class="ore hvr-pop" src="./assets/images/emerald.png" alt="">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-6 text-lg-right text-sm-center">
+                            <div class="col-sm-6 text-lg-right text-sm-center">
                                 <img class="ore hvr-pop" src="./assets/images/redstone.png" alt="">
                             </div>
-                            <div class="col-lg-6 text-lg-left text-sm-center">
+                            <div class="col-sm-6 text-lg-left text-sm-center">
                                 <img class="ore hvr-pop" src="./assets/images/lapis.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="row winLossRow">
+                            <div class="col-lg-6">
+                                <h2 class="text-center">Wins:<span id="win-count">100</span></h2>    
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="text-center">Losses:<span id="loss-count">100</span></h2>    
                             </div>
                         </div>
 

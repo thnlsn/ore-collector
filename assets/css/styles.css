@@ -1,38 +1,40 @@
 body {
     font-family: 'Press Start 2P', cursive !important;
-    color: antiquewhite;
-    text-shadow: 2px 2px black;
+    color: #bcafad;
+    text-shadow: 3px 3px black;
     background-image: url(../images/background.png);
+    line-height: 168%;
 }
 
-h1 {
+.titleRow {
     padding: 2.5% 0;
 }
 
-h2 {
-    padding: 0 0 3% 0;
-}
-
 span {
-    color: whitesmoke;
-
+    color: gold;
+    text-shadow: 3px 3px rgba(121, 95, 29, 0.877);
 }
 
 .rules {
-    margin-top: 10%;
+    padding: 2.5% 0;
+    color: whitesmoke;
 }
 
-.ore {
+.ore  {
     height: 200px;
     width: 200px;
-    opacity: 0.8;
-    margin: 14% 0 0% 0 !important;
+    opacity: 0.85;
     cursor: url('../images/pickaxe.png'), auto;
 }
 
 .ore:hover {
     opacity: 1;
 }
+
+.ore, .winLossRow {
+    margin: 7% 0 0% 0 !important;
+}
+
 
 
 
