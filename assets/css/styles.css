@@ -1,9 +1,9 @@
 body {
     font-family: 'Press Start 2P', cursive !important;
     color: #bcafad;
-    text-shadow: 3px 3px black;
+    text-shadow: 3px 3px rgb(26, 26, 26);
     background-image: url(../images/background.png);
-    line-height: 168%;
+    line-height: 163%;
 }
 
 .titleRow {
@@ -12,7 +12,7 @@ body {
 
 span {
     color: gold;
-    text-shadow: 3px 3px rgba(121, 95, 29, 0.877);
+    text-shadow: 2px 2px rgba(121, 95, 29, 0.877);
 }
 
 .rules {
@@ -31,10 +31,13 @@ span {
     opacity: 1;
 }
 
-.ore, .winLossRow {
-    margin: 7% 0 0% 0 !important;
+.ore {
+    margin: 7% 0 0% 0;
 }
 
+.winLossRow {
+    margin: 5% 0 0% 0;
+}
 
 
 
