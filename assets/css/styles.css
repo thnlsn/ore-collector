@@ -3,7 +3,7 @@ body {
     color: #bcafad;
     text-shadow: 3px 3px rgb(26, 26, 26);
     background-image: url(../images/background.png);
-    line-height: 163%;
+    line-height: 160%;
 }
 
 .titleRow {
@@ -43,7 +43,22 @@ span {
 
 
 
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) { 
 
+        .rules {
+            padding: 2.5% 0;
+            color: whitesmoke;
+            font-size: 100px;
+        }
+
+
+
+
+
+    }
 
 
 

@@ -53,6 +53,7 @@ $("#dia-ore").click(function() {
     addToTotal(diamond);
     console.log(total);
     update("total-amount", total);
+    $("#dia-ore").shake(10,5,1);
     winLossCheck();
 });
 
@@ -60,6 +61,7 @@ $("#em-ore").click(function() {
     addToTotal(emerald);
     console.log(total);
     update("total-amount", total);
+    $("#em-ore").shake(10,5,1);
     winLossCheck();
   });
 
@@ -67,6 +69,7 @@ $("#red-ore").click(function() {
     addToTotal(redstone);
     console.log(total);
     update("total-amount", total);
+    $("#red-ore").shake(10,5,1);
     winLossCheck();
 });
 
@@ -74,6 +77,7 @@ $("#blu-ore").click(function() {
     addToTotal(lapis);
     console.log(total);
     update("total-amount", total);
+    $("#blu-ore").shake(10,5,1);
     winLossCheck();
 });
 
@@ -105,34 +109,21 @@ function winLossCheck() {
 }
 
 
-//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
 
 
 
-//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
-
-
-
-//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
-
-
-
-//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
-
-
-
-//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
-
-
-
-//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 
-
-
-
-
-
-
-
+//▓▓▓▓▓▓▓▓▓▓▓▓▓▓ FUNCTION TO SHAKE ORE
+jQuery.fn.shake = function(interval,distance,times){
+    interval = typeof interval == "undefined" ? 100 : interval;
+    distance = typeof distance == "undefined" ? 10 : distance;
+    times = typeof times == "undefined" ? 3 : times;
+    var jTarget = $(this);
+    jTarget.css('position','relative');
+    for(var iter=0;iter<(times+1);iter++){
+       jTarget.animate({ left: ((iter%2==0 ? distance : distance*-1))}, interval);
+    }
+    return jTarget.animate({ left: 0},interval);
+ }
 
 
 
@@ -192,3 +183,46 @@ The random number shown at the start of the game should be between 19 - 120.
 Each crystal should have a random hidden value between 1 - 12.
 
 --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
