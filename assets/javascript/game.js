@@ -13,7 +13,6 @@ var start = true;
 function update(id, value) {
 //  document.getElementById(id).innerHTML = value;
     $(id).html(value);
-    // .text()
 };
 
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓ RANDOMIZER FUNCTION (can take any inputs)
